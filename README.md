@@ -30,3 +30,12 @@ sysctl --system
 # Calico
 kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/installation/hosted/rbac-kdd.yaml
 kubectl apply -f https://docs.projectcalico.org/v3.1/getting-started/kubernetes/installation/hosted/kubernetes-datastore/calico-networking/1.7/calico.yaml
+
+# Start 
+kubeadm init
+./kubeconfigurator (without sudo)
+bash calico
+
+## Check
+kubectl version
+kubectl get nodes
